@@ -63,6 +63,7 @@ figure img,figure svg{cursor:zoom-in}
       <a href="#emisores" data-nav="emisores" style="font:500 12.5px -apple-system,system-ui,sans-serif;color:#1D1D1F;padding:7px 11px;border-radius:12px;transition:background .25s,color .25s">Emisores</a>
       <a href="#calificacion" data-nav="calificacion" style="font:500 12.5px -apple-system,system-ui,sans-serif;color:#1D1D1F;padding:7px 11px;border-radius:12px;transition:background .25s,color .25s">Calificación</a>
       <a href="#glosario" data-nav="glosario" style="font:500 12.5px -apple-system,system-ui,sans-serif;color:#1D1D1F;padding:7px 11px;border-radius:12px;transition:background .25s,color .25s">Glosario</a>
+      <a href="#bibliografia" data-nav="bibliografia" style="font:500 12.5px -apple-system,system-ui,sans-serif;color:#1D1D1F;padding:7px 11px;border-radius:12px;transition:background .25s,color .25s">Bibliografía</a>
     </nav>
   </div>
 </header>
@@ -479,17 +480,17 @@ figure img,figure svg{cursor:zoom-in}
           <button type="button" onClick="{{ pickEmv1 }}" style="position:relative;z-index:1;background:none;border:0;cursor:pointer;font:600 15px -apple-system,system-ui,sans-serif;letter-spacing:-.01em;color:#A32E22;padding:11px 6px;border-radius:13px">Factores de riesgo</button>
         </div>
         <sc-if value="{{ emv0 }}" hint-placeholder-val="{{ true }}">
-        <div style="columns:360px 2;column-gap:16px">
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;align-items:start">
           <div style="break-inside:avoid;border-left:4px solid #1D8A5B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Mejora en el desempeño:</strong> al cierre del 1S2026, la utilidad neta se incrementó en un 74,27% con respecto al 1S2025, impulsada principalmente por la expansión del margen financiero neto (+54,18%) favorecido por la reducción del gasto por deterioro de activos (-23,70%). El resultado antes de impuestos presentó un crecimiento más pronunciado (+112,55%), sin embargo, el incremento del gasto por impuesto de renta (+402%) moderó el resultado neto. A pesar de ello, la evolución de la utilidad antes de impuestos refleja una mejora significativa en el desempeño operativo y en la capacidad de generación de resultados del emisor.</p>
           </div>
           <div style="break-inside:avoid;border-left:4px solid #1D8A5B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Crecimiento de la cartera:</strong> al cierre del 1S2026, la cartera registró un crecimiento del 5,57% con respecto al 2025, contribuyendo aproximadamente al 78% de la expansión del activo total. Este comportamiento estuvo impulsado principalmente por los segmentos comercial (+6,3%) y vivienda (+5,0%). Lo anterior, muestra la capacidad del emisor para continuar expandiendo su actividad de intermediación pese a un entorno menos favorable para la colocación de crédito.</p>
           </div>
-        </div>
-        <div style="break-inside:avoid;border-left:4px solid #1D8A5B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
+          <div style="grid-column:1/-1;break-inside:avoid;border-left:4px solid #1D8A5B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Emisor con métricas de solvencia destacables:</strong> el emisor mantiene el nivel de solvencia total más alto (18,5%) y ocupa el segundo lugar en solvencia básica (12,7%) entre sus pares. Esto le otorgan una mayor capacidad para absorber pérdidas inesperadas y más holgura frente a los mínimos exigibles para EIS. Adicionalmente, esta posición de capital le proporciona mayor capacidad para soportar una eventual expansión de los activos ponderados por nivel de riesgo, sin generar una presión significativa sobre sus indicadores de solvencia.</p>
           </div>
+        </div>
         </sc-if>
         <sc-if value="{{ emv1 }}" hint-placeholder-val="{{ false }}">
         <div style="columns:360px 2;column-gap:16px">
@@ -581,21 +582,20 @@ figure img,figure svg{cursor:zoom-in}
         </div>
         </sc-if>
         <sc-if value="{{ emv1 }}" hint-placeholder-val="{{ false }}">
-        <div style="columns:360px 2;column-gap:16px">
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;align-items:start">
           <div style="break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Presión en el margen financiero neto:</strong> al cierre del 1S2026, el margen financiero neto después de provisiones cayó un 24,66%, explicada principalmente por el crecimiento de los gastos por intereses (+23,43%) y el mayor deterioro de activos (+0,90%). El 89% del incremento en los gastos por intereses se asoció principalmente al mayor gasto por obligaciones interbancarias de corto plazo y CDTs, cuyos saldos en el pasivo crecieron 14,1% y 10,1%, respectivamente. Esto refleja un efecto combinado entre un mayor volumen de recursos captados y el incremento en su costo, en un entorno de tasas de interés elevadas, comprimiendo el margen financiero neto.</p>
           </div>
           <div style="break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Banco con los menores niveles de solvencia:</strong> el emisor registró los menores niveles de solvencia básica (9,8%) y total (11,9%) entre sus pares analizados al cierre del 1S2026. Adicionalmente, ambos indicadores presentaron reducciones de 0,3% y 0,6%, respectivamente. Si bien los niveles de solvencia se mantienen por encima de los mínimos exigidos a EIS, su menor holgura, refleja una acotada capacidad para absorber pérdidas inesperadas y limita el margen disponible para soportar una mayor expansión de los activos ponderados por nivel de riesgo.</p>
           </div>
-        </div>
-        <div style="break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)"><p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Menor calidad y estabilidad de los resultados:</strong> en el 1S2026, la utilidad neta creció 22,60%, impulsada principalmente por los ingresos netos de actividades de negociación (+59,7%), mientras que el margen financiero neto después de provisiones se contrajo 24,66%. En línea con lo anterior, las inversiones financieras y derivados (+10,42%) explicaron el 63% del crecimiento del activo (+4,13%), frente al 15% aportado por la cartera neta. Esta composición sugiere una expansión del balance más orientada hacia la gestión del portafolio de inversiones que hacia la actividad tradicional de intermediación, lo que podría incrementar la exposición de los resultados al riesgo de mercado y limitar la estabilidad y recurrencia de la rentabilidad.</p></div><div style="columns:360px 2;column-gap:16px">
           <div style="break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Moderado crecimiento de cartera:</strong> al cierre del 1S2026, la cartera bruta se expandió un 3,02% frente al cierre de 2025, por debajo del promedio de sus pares (+3,51%), lo que refleja una menor expansión del negocio de intermediación. El crecimiento estuvo impulsado principalmente por las modalidades de vivienda (+7,6%) y comercial (+4,0%), mientras que, consumo se contrajo un 0,7%, evidenciando menor dinamismo en un segmento de mayor sensibilidad al ciclo económico. En conjunto, el menor crecimiento de la cartera podría limitar la generación de ingresos financieros vía volumen y, por tanto, restringir el crecimiento de los resultados del emisor.</p>
           </div>
           <div style="break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)">
             <p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Incremento de la exposición al riesgo de refinanciación y mayor costo de fondeo:</strong> el fondeo interbancario y overnight se incrementó un 14,1%, lo que incrementó su participación en el pasivo del 16,1% al cierre de 2025 a 17,5% al cierre del 1S2026. Este mayor uso de fuentes de corto plazo incrementa la exposición al riesgo de refinanciación y liquidez. Además, por su naturaleza de corto plazo, este tipo de fondeo es más sensible a cambios en las condiciones de mercado, lo que podría elevar el costo de fondeo ante escenarios de menor liquidez o mayores tasas de interés.</p>
           </div>
+          <div style="grid-column:1/-1;break-inside:avoid;border-left:4px solid #C0392B;background:#fff;border-radius:22px;padding:15px 20px;margin:0 0 12px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 26px rgba(0,0,0,.05)"><p style="font:400 14px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C;margin:0;text-align:justify"><strong style="font-weight:600;color:#1D1D1F">Menor calidad y estabilidad de los resultados:</strong> en el 1S2026, la utilidad neta creció 22,60%, impulsada principalmente por los ingresos netos de actividades de negociación (+59,7%), mientras que el margen financiero neto después de provisiones se contrajo 24,66%. En línea con lo anterior, las inversiones financieras y derivados (+10,42%) explicaron el 63% del crecimiento del activo (+4,13%), frente al 15% aportado por la cartera neta. Esta composición sugiere una expansión del balance más orientada hacia la gestión del portafolio de inversiones que hacia la actividad tradicional de intermediación, lo que podría incrementar la exposición de los resultados al riesgo de mercado y limitar la estabilidad y recurrencia de la rentabilidad.</p></div>
         </div>
         </sc-if>
       </div>
@@ -720,24 +720,24 @@ figure img,figure svg{cursor:zoom-in}
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">Bancolombia</h3>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">BRC · 15 abr 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · BRC 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch Ratings · 10 feb 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+            <a href="https://colombia.ratings.spglobal.com/ratings/es/regulatory/article/-/view/type/PDF/id/7485" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">S&amp;P National Ratings · 20 may 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · A-1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
+            <a href="https://www.grupobancolombia.com/wcm/connect/www.grupobancolombia.com15880/547ae5c4-e21c-4565-bd42-3ee41f89bae2/Bancolombia_Rating_report_NACIONALES_ESP_Feb_10_2026_Publicado.pdf?MOD=AJPERES&amp;CVID=pOw4sgo" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch Ratings · 10 feb 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div>
-            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">BRC</div>
+            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">S&amp;P National Ratings</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">La disminución acentuada de los indicadores de rentabilidad con una evolución desfavorable respecto de los pares y que derive en un deterioro pronunciado de los indicadores de solvencia patrimonial.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">El deterioro de los indicadores de calidad más allá de las expectativas.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La disminución acentuada de los indicadores de rentabilidad con una evolución desfavorable respecto de los pares y que derive en un deterioro pronunciado de los indicadores de solvencia patrimonial.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">El deterioro de los indicadores de calidad y cobertura de cartera más allá de las expectativas de la calificadora (ICV alrededor del 4% durante los próximos 12 meses y cobertura de cartera en 176% al cierre de 2025).</li>
             </ul>
           </div>
           <div>
             <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">Fitch Ratings</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">La calificación de Bancolombia podría bajar si se deteriora significativamente el entorno operativo (EO) local o si se produce una acción negativa sobre la calificación soberana del país.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Las calificaciones de Bancolombia podrían bajar ante un deterioro importante de la rentabilidad y las métricas de capital. Específicamente, si la utilidad operativa sobre APR (Activos Ponderados por Riesgo) cae de forma sostenida por debajo del 2% (4,1% a septiembre de 2025) y el indicador CET1 (common equity tier 1) es inferior a 11% (12,3% a septiembre de 2025), lo que dejaría de ser consistente con su perfil de negocio sólido.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Un aumento significativo de la exposición del banco al soberano también podría desencadenar una rebaja de la calificación de viabilidad (VR; viability rating) hasta el mismo nivel que la calificación soberana.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La calificación de Bancolombia podría bajar si se deteriora significativamente el entorno operativo (EO) local o si se produce una acción negativa sobre la calificación soberana del país.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Las calificaciones de Bancolombia podrían bajar ante un deterioro importante de la rentabilidad y las métricas de capital. Específicamente, si la utilidad operativa sobre APR (Activos Ponderados por Riesgo) cae de forma sostenida por debajo del 2% (4,1% a septiembre de 2025) y el indicador CET1 (common equity tier 1) es inferior a 11% (12,3% a septiembre de 2025), lo que dejaría de ser consistente con su perfil de negocio sólido.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Un aumento significativo de la exposición del banco al soberano también podría desencadenar una rebaja de la calificación de viabilidad (VR; viability rating) hasta el mismo nivel que la calificación soberana.</li>
             </ul>
           </div>
         </div>
@@ -749,23 +749,23 @@ figure img,figure svg{cursor:zoom-in}
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">Banco Davivienda</h3>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">BRC · 11 jun 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · BRC 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 18 nov 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+            <a href="https://colombia.ratings.spglobal.com/ratings/es/regulatory/article/-/view/type/PDF/id/7486" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">S&amp;P National Ratings · 11 jun 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · A-1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
+            <a href="https://ir.davivienda.com/wp-content/uploads/2025/12/Davivienda_Fitch_9_DIC_ESP.pdf" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 18 nov 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div>
-            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">BRC</div>
+            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">S&amp;P National Ratings</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Aunque para la calificadora es poco probable, se pueden bajar las calificaciones si se produce un empeoramiento sustancial en los fundamentos financieros de la institución, especialmente un aumento en el apetito por el riesgo que comprometiera la rentabilidad, el capital, la liquidez o la flexibilidad.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Aunque para la calificadora es poco probable, se pueden bajar las calificaciones si se produce un empeoramiento sustancial en los fundamentos financieros de la institución, especialmente un aumento en el apetito por el riesgo que comprometiera la rentabilidad, el capital, la liquidez o la flexibilidad.</li>
             </ul>
           </div>
           <div>
             <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">Fitch</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Las calificaciones de Davivienda podrían bajar si el deterioro de la calidad de activos no se controla por debajo de 4% (4,4% a septiembre de 2025) y el indicador de utilidad operativa a APR (Activos Ponderados por Riesgo) se desvía de forma consistente por debajo de 1,25% (1,5% a junio de 2025) previsto por Fitch para los próximos 12 a 24 meses, dando como resultado una erosión del CET1 de forma consistente por debajo de 10% (11,8% a septiembre de 2025).</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Un debilitamiento de la evaluación de Fitch del perfil de negocio o de riesgo podría derivar en una acción de calificación negativa.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Las calificaciones nacionales de Davivienda reflejarán cualquier cambio en las calificaciones soberanas.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Las calificaciones de Davivienda podrían bajar si el deterioro de la calidad de activos no se controla por debajo de 4% (4,4% a septiembre de 2025) y el indicador de utilidad operativa a APR (Activos Ponderados por Riesgo) se desvía de forma consistente por debajo de 1,25% (1,5% a junio de 2025) previsto por Fitch para los próximos 12 a 24 meses, dando como resultado una erosión del CET1 de forma consistente por debajo de 10% (11,8% a septiembre de 2025).</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Un debilitamiento de la evaluación de Fitch del perfil de negocio o de riesgo podría derivar en una acción de calificación negativa.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Las calificaciones nacionales de Davivienda reflejarán cualquier cambio en las calificaciones soberanas.</li>
             </ul>
           </div>
         </div>
@@ -776,13 +776,13 @@ figure img,figure svg{cursor:zoom-in}
       <article style="background:#fff;border-radius:30px;padding:34px 32px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 18px 44px rgba(0,0,0,.06);display:grid;grid-template-columns:minmax(240px,.62fr) minmax(0,1.38fr);gap:32px;animation:floatIn .5s cubic-bezier(.16,.84,.44,1) both">
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">Banco de Bogotá</h3>
-          <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">BRC · 15 abr 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · BRC 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+          <a href="https://colombia.ratings.spglobal.com/ratings/es/regulatory/article/-/view/type/PDF/id/7348" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">S&amp;P National Ratings · 15 abr 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · A-1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
         </div>
         <div>
-          <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">BRC</div>
+          <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">S&amp;P National Ratings</div>
           <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">La calificación podría verse afectada por una reducción en los indicadores de solvencia más allá de las expectativas de la calificadora, así como por un deterioro en la posición de liquidez y en la estructura de fondeo que impacte negativamente su posición de negocio.</li>
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">El aumento en la concentración de las fuentes de fondeo con mayor participación de inversionistas mayoristas.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La calificación podría verse afectada por una reducción en los indicadores de solvencia más allá de las expectativas de la calificadora, así como por un deterioro en la posición de liquidez y en la estructura de fondeo que impacte negativamente su posición de negocio.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">El aumento en la concentración de las fuentes de fondeo con mayor participación de inversionistas mayoristas.</li>
           </ul>
         </div>
       </article>
@@ -793,24 +793,24 @@ figure img,figure svg{cursor:zoom-in}
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">Banco de Occidente</h3>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 18 nov 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">BRC · 15 abr 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · BRC 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+            <a href="https://www.fitchratings.com/entity/banco-de-occidente-sa-88409674#ratings" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 18 nov 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
+            <a href="https://colombia.ratings.spglobal.com/ratings/es/regulatory/article/-/view/type/PDF/id/7493" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">S&amp;P National Ratings · 12 jun 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · A-1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div>
             <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">Fitch</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Sensibilidad a un deterioro significativo de su entorno operativo local o a una acción de calificación negativa sobre la calificación soberana.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Las calificaciones podrían bajar por un deterioro significativo en la calidad de los activos y en las métricas de rentabilidad, si estas dejan de reflejar el buen perfil de negocio del banco; específicamente, con indicadores de utilidad operativa sobre APR consistentemente por debajo de 1% (1,4% a junio de 2025) y de cartera vencida por encima de 5% (3,1% a junio de 2025).</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Sensibilidad a un deterioro significativo de su entorno operativo local o a una acción de calificación negativa sobre la calificación soberana.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Las calificaciones podrían bajar por un deterioro significativo en la calidad de los activos y en las métricas de rentabilidad, si estas dejan de reflejar el buen perfil de negocio del banco; específicamente, con indicadores de utilidad operativa sobre APR consistentemente por debajo de 1% (1,4% a junio de 2025) y de cartera vencida por encima de 5% (3,1% a junio de 2025).</li>
             </ul>
           </div>
           <div>
-            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">BRC</div>
+            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">S&amp;P National Ratings</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Menor holgura de los niveles de solvencia frente a los mínimos regulatorios.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">El deterioro en los indicadores de calidad de la cartera.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Menores niveles de rentabilidad.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La reducción sostenida de la solvencia consolidada del Banco de Occidente a niveles inferiores a las expectativas de la calificadora (alrededor del 13% en los próximos 12 meses), bien sea por un aumento en el consumo de capital por riesgo de mercado, un incremento acelerado de su cartera o un debilitamiento de la generación interna de capital.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">El deterioro de los indicadores de cartera vencida (ICV) a niveles superiores al 6,5% de forma sostenida (promedio de los últimos tres años es 3%).</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">El cambio de la percepción de la calificadora sobre la relevancia estratégica del banco para su principal accionista, que derive en una menor capacidad y voluntad de apoyo patrimonial en escenarios de estrés financiero.</li>
             </ul>
           </div>
         </div>
@@ -821,15 +821,15 @@ figure img,figure svg{cursor:zoom-in}
       <article style="background:#fff;border-radius:30px;padding:34px 32px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 18px 44px rgba(0,0,0,.06);display:grid;grid-template-columns:minmax(240px,.62fr) minmax(0,1.38fr);gap:32px;animation:floatIn .5s cubic-bezier(.16,.84,.44,1) both">
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">BBVA Colombia</h3>
-          <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 09 dic 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+          <a href="https://www.bbva.com.co/content/dam/public-web/colombia/documents/home/body/inversionista/espanol/ratings-agencias/BBVA-Col-CU-Jul-11-2024.pdf" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Fitch · 09 dic 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · F1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
         </div>
         <div>
           <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">Fitch</div>
           <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Una acción de calificación negativa en su matriz.</li>
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Una acción negativa en la calificación soberana también llevaría a una acción de calificación a la baja.</li>
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Las calificaciones de BBVA Colombia también podrían modificarse ante cambios en la evaluación de Fitch sobre la capacidad o disposición de su matriz para brindar apoyo al banco.</li>
-            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">La Calificación de Viabilidad (VR) de BBVA Colombia podría afectarse si la calidad de activos continúa deteriorándose, llevando a que la utilidad operativa sobre APR disminuya de forma consistente por debajo de 1,25% (0,8% a junio de 2025) y sin una tendencia clara de recuperación, lo que daría como resultado una erosión sostenida del indicador CET1, acompañado de un cambio en la evaluación de Fitch sobre el apoyo ordinario de la matriz a esta filial.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Una acción de calificación negativa en su matriz.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Una acción negativa en la calificación soberana también llevaría a una acción de calificación a la baja.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Las calificaciones de BBVA Colombia también podrían modificarse ante cambios en la evaluación de Fitch sobre la capacidad o disposición de su matriz para brindar apoyo al banco.</li>
+            <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La Calificación de Viabilidad (VR) de BBVA Colombia podría afectarse si la calidad de activos continúa deteriorándose, llevando a que la utilidad operativa sobre APR disminuya de forma consistente por debajo de 1,25% (0,8% a junio de 2025) y sin una tendencia clara de recuperación, lo que daría como resultado una erosión sostenida del indicador CET1, acompañado de un cambio en la evaluación de Fitch sobre el apoyo ordinario de la matriz a esta filial.</li>
           </ul>
         </div>
       </article>
@@ -840,25 +840,25 @@ figure img,figure svg{cursor:zoom-in}
         <div>
           <h3 style="font:600 22px/1.2 -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 16px">Banco Popular</h3>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">BRC · 29 jul 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · BRC 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
-            <div style="background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Value and Risk · 12 sep 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · VrR 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></div>
+            <a href="https://colombia.ratings.spglobal.com/ratings/es/regulatory/article/-/view/type/PDF/id/8000" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">S&amp;P National Ratings · 29 jul 2026</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · A-1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
+            <a href="https://www.bancopopular.com.co/wps/wcm/connect/bancopopular/c9c009f2-f8d4-4c0c-937d-26052a6ea536/01_+Carta24hrs_BcoPopular_2025.pdf?MOD=AJPERES&amp;CVID=pC2uroC" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;background:rgba(0,0,0,.035);border-radius:16px;padding:14px 16px"><div style="font:500 11.5px -apple-system,system-ui,sans-serif;color:#86868B">Value and Risk · 12 sep 2025</div><div style="font:600 17px -apple-system,'SF Pro Display',system-ui,sans-serif;letter-spacing:-.02em;margin-top:4px">AAA · VrR 1+</div><div style="font:400 12px -apple-system,system-ui,sans-serif;color:#6E6E73">Perspectiva estable</div></a>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
           <div>
-            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">BRC</div>
+            <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">S&amp;P National Ratings</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">La calificadora podría bajar la calificación de riesgo si se observa una pérdida de relevancia de Banco Popular para Grupo Aval o una menor alineación estratégica que se traduzca en una reducción de la voluntad o capacidad de apoyo en escenarios de estrés.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Deterioro sostenido de la calidad de cartera por arriba de las expectativas de la calificadora (2,6%) y del promedio de sus pares.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Caída en la solvencia total de forma sostenida por debajo de las expectativas de la calificadora (12,3%), niveles similares a los que mantuvo el emisor en abril de 2026.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">La calificadora podría bajar la calificación de riesgo si se observa una pérdida de relevancia de Banco Popular para Grupo Aval o una menor alineación estratégica que se traduzca en una reducción de la voluntad o capacidad de apoyo en escenarios de estrés.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Deterioro sostenido de la calidad de cartera por arriba de las expectativas de la calificadora (2,6%) y del promedio de sus pares.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Caída en la solvencia total de forma sostenida por debajo de las expectativas de la calificadora (12,3%), niveles similares a los que mantuvo el emisor en abril de 2026.</li>
             </ul>
           </div>
           <div>
             <div style="font:600 12px -apple-system,system-ui,sans-serif;color:#A6690A;margin-bottom:10px">Value and Risk</div>
             <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Deterioro en los márgenes de intermediación y rentabilidad.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Mayores incrementos respecto a los estimados en costos y gastos, producto de la implementación de su estrategia.</li>
-              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C">Pérdidas persistentes que impacten su estructura financiera, indicadores de suficiencia de capital y niveles de liquidez.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Deterioro en los márgenes de intermediación y rentabilidad.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Mayores incrementos respecto a los estimados en costos y gastos, producto de la implementación de su estrategia.</li>
+              <li style="font:400 14.5px/1.6 -apple-system,system-ui,sans-serif;color:#3A3A3C;text-align:justify">Pérdidas persistentes que impacten su estructura financiera, indicadores de suficiencia de capital y niveles de liquidez.</li>
             </ul>
           </div>
         </div>
@@ -964,11 +964,13 @@ figure img,figure svg{cursor:zoom-in}
       <ul style="list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:8px">
         <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.davivienda.com" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Davivienda — Visión, tendencias sectoriales (financiero)</a></li>
         <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.grupobancolombia.com/empresas/capital-inteligente/investigaciones-economicas" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Bancolombia — Capital Inteligente, investigaciones económicas</a></li>
-        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://investigaciones.corficolombiana.com" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Corficolombiana — informe establecimientos de crédito, diciembre 2025</a></li>
-        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.asobancaria.com" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Asobancaria — Banca &amp; Economía, marzo 2026</a></li>
-        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.larepublica.co" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">La República — utilidades de la banca a febrero de 2026</a></li>
+        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://investigaciones.corficolombiana.com" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Investigaciones Corficolombiana</a></li>
+        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://publicaciones.asobancaria.com/" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Asobancaria</a></li>
+        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.larepublica.co/" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">La República</a></li>
         <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.casadebolsa.com.co" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Casa de Bolsa — análisis y estrategia</a></li>
         <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.accivalores.com" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Acciones y Valores — investigaciones económicas</a></li>
+        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.bloomberglinea.com/latinoamerica/colombia/" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Bloomberg Línea</a></li>
+        <li style="font:400 13.5px/1.55 -apple-system,system-ui,sans-serif;color:#3A3A3C"><a href="https://www.fasecolda.com/sala-de-prensa/fasecolda-en-linea/" target="_blank" rel="noopener" style="color:#A6690A;text-decoration:none">Fasecolda</a></li>
       </ul>
     </div>
   </div>
